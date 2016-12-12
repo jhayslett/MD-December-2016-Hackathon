@@ -25,46 +25,52 @@ h4, h5, h6 {
 }
 
 header {
-	margin-bottom:4rem;
-	background:#446CB3;
-	box-shadow: 0px 9px 5px 0px  #888888;
-	-webkit-box-shadow: 0px 9px 5px 0px  #888888;
-	-moz-box-shadow: 0px 9px 5px 0px  #888888;
-	padding-bottom:1rem;
+	margin-bottom: 4rem;
+	background-color: #34495E;
+	box-shadow: 0px 3px 15px 0px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0px 3px 15px 0px rgba(0,0,0,.4);
+	-moz-box-shadow: 0px 3px 15px 0px rgba(0,0,0,.4);
+	padding-bottom: 1rem;
+  color: #fff;
 }
 
 .container {
-  height: 100px;
 	margin-top: 0;
   padding: 2rem 1rem 1rem;
-	text-align: center;
 }
 
 header h1 {
-  color: #FFFFFF;
   font-size: 2rem;
-  margin-bottom: 1rem;
-  margin-top: 0;
+  margin-bottom: .5rem;
   letter-spacing: 0;
-  text-shadow: 2px -2px 3px #000000;
 }
 
 footer {
   position: relative;
-  background-color: #446CB3;
-  height: 50px;
-  padding: 1rem 1rem;
+	background-color: #34495E;
+  padding: 2rem 2rem;
   color: #FFFFFF;
+}
+
+footer h3:first-child {
+  padding-bottom: 15px;
 }
 
 .content{
 	max-width: 1200px;
-    margin: 0 auto;
 	padding-bottom: 50px;
 }
 
 article[id$="element"] {
-	margin: 3em auto;
+  width: 75%;
+  margin: 0 0 50px 40px;
+  max-width: 750px;
+  border: 1px solid rgba(0,0,0,.25);
+  padding: 40px;
+}
+
+article h2 {
+  padding-bottom: 25px;
 }
 
 /* =================================== *\
