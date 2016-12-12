@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=false">
   <link rel="stylesheet" type="text/css" href="UIcomponents.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>MD December 2016 Hackathon</title>
 </head>
 <body>
-  <header>
-    <h1>December 2016 Hackathon</h1>
-    <nav>
-      <ul>
-        <li><a>Radio Buttons &amp; Checkboxes</a></li>
-        <li><a>Dropdown Components</a></i>
-        <li><a>Paper/Shadow Components</a></li>
-        <li><a>UI Component 4</a></li>
-        <li><a>UI Component 5</a></li>
-        <li><a>UI Component 6</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <article class="component-wrapper">
+ <header class="wrapper">
+    <div class="container">
+        <h1>December 2016 Hackathon</h1>
+        <h4>Modern Developer</h4>
+    </div>
+</header>
+  <main class="content">
+
+    <article id="radios-element" class="component-wrapper">
       <h2>Radio Buttons &amp; Checkboxes</h2>
       <section class="component-showcase">
         <input type="checkbox" id="normal-box">
@@ -34,123 +31,189 @@
         <label for="gapped-radio">Gapped Radio Button</label><br>
       </section>  
     </article>
-    <article class="component-wrapper">
-      <h2>Dropdown</h2>
-      <section class="component-showcase">
+
+    <article id="dropdown-element" class="component-wrapper">
+      
+      <section class="component-showcase dropdowns">
+        <h2>Dropdown</h2>
         <div class="drop-container">
-          <label for="drop" class="drop-btn">Dropdown</label>
-          <input type="checkbox" id="drop">
-          <ul class="drop-list">
-            <li>First</li>
-            <li>Second</li>
-            <li>Third</li>
-          </ul>  
+           <label for="drop" class="drop-btn">Dropdown</label>
+           <input type="checkbox" id="drop">
+           <ul class="drop-list drop-above">
+             <li><label for="drop">First</label></li>
+             <li><label for="drop">Second</label></li>
+             <li class="divider"></li>
+             <li><label for="drop">Third</label></li>
+           </ul>  
+         </div>
+      </section>
+
+      <section class="component-options dropdowns">
+        <h2>Dropdown - List below drop button</h2>
+        <div class="drop-container">
+           <label for="drop-blw" class="drop-btn">Dropdown</label>
+           <input type="checkbox" id="drop-blw">
+           <ul class="drop-list drop-below">
+             <li><label for="drop-blw">First</label></li>
+             <li><label for="drop-blw">Second</label></li>
+             <li><label for="drop-blw">Third</label></li>
+           </ul>  
+         </div>
+      </section>
+
+      <section class="component-options dropdowns">
+        <h2>Dropdown - List Aside</h2>
+        <div class="drop-container drop-container-aside">
+           <label for="drop-asd" class="drop-btn">Dropdown</label>
+           <input type="checkbox" id="drop-asd">
+           <ul class="drop-list drop-aside">
+             <li><label for="drop-asd">First</label></li>
+             <li class="divider"></li>
+             <li><label for="drop-asd">Second</label></li>
+             <li class="divider"></li>
+             <li><label for="drop-asd">Third</label></li>
+           </ul>  
+         </div>
+      </section> 
+    </article>
+
+    <article id="paper-element" class="paper">
+      <section class="squares">
+        <h1>Sqaures</h1>
+        <div class="square shadow-1"></div>
+        <div class="square shadow-2"></div>
+        <div class="square shadow-3"></div>
+        <div class="square shadow-4"></div>
+        <div class="square shadow-5"></div>
+      </section>
+      <section class="animated-squares">
+        <h1>Sqaures - Hover Animated</h1>
+        <div class="square shadow-1 sqaure-animate animate-level-1"></div>
+        <div class="square shadow-2 sqaure-animate animate-level-2"></div>
+        <div class="square shadow-3 sqaure-animate animate-level-3"></div>
+        <div class="square shadow-4 sqaure-animate animate-level-4"></div>
+        <div class="square shadow-5 sqaure-animate animate-level-5"></div>
+      </section>
+      <section class="rounded">
+        <h1>Rounded Sqaures</h1>
+        <div class="rounded shadow-1"></div>
+        <div class="rounded shadow-2"></div>
+        <div class="rounded shadow-3"></div>
+        <div class="rounded shadow-4"></div>
+        <div class="rounded shadow-5"></div>
+      </section>
+      <section class="animated-rounded">
+        <h1>Rounded Sqaures - Hover Animated</h1>
+        <div class="rounded shadow-1 rounded-animate animate-level-1"></div>
+        <div class="rounded shadow-2 rounded-animate animate-level-2"></div>
+        <div class="rounded shadow-3 rounded-animate animate-level-3"></div>
+        <div class="rounded shadow-4 rounded-animate animate-level-4"></div>
+        <div class="rounded shadow-5 rounded-animate animate-level-5"></div>
+      </section>
+      <section class="circles">
+        <h1>Circles</h1>
+        <div class="circle shadow-1"></div>
+        <div class="circle shadow-2"></div>
+        <div class="circle shadow-3"></div>
+        <div class="circle shadow-4"></div>
+        <div class="circle shadow-5"></div>
+      </section>
+      <section class="animated-circles">
+        <h1>Circles - Hover Animated</h1>
+        <div class="circle shadow-1 circle-animate animate-level-1"></div>
+        <div class="circle shadow-2 circle-animate animate-level-2"></div>
+        <div class="circle shadow-3 circle-animate animate-level-3"></div>
+        <div class="circle shadow-4 circle-animate animate-level-4"></div>
+        <div class="circle shadow-5 circle-animate animate-level-5"></div>
+      </section>
+    </article>
+    
+    <article class="component-wrapper input-component">
+        <h2>Input</h2>
+        <form>
+          <div class="input-style-1">
+            <input type="text" placeholder="Placeholder " required>
+            <label for="name">Style 1</label>
+          </div>
+          <div class="input-style-2">
+            <input type="text" required>
+            <label for="name">Style 2</label>
+          </div>
+          <div class="input-style-2 icon">
+            <input type="text" required>
+            <label for="name">Style 2 With Icon</label>
+            <i class="material-icons">dns</i>
+          </div>
+          <div class="input-style-1">
+            <input id="name" name="name" type="text" placeholder="This input is disabled" disabled>
+            <label for="name">Disabled</label>
+          </div>
+        </form>
+      </article>
+
+    <article id="tabs-element" class="component-wrapper">
+
+      <section class="component-showcase">
+        <h2>Tabs</h2>
+        <div class="tab-container">
+          <ul>
+            <li><label for="tab-under-1">Item1</label></li>
+            <li><label for="tab-under-2">Item2</label></li>
+            <li><label for="tab-under-3">Item3</label></li>
+            <li><label for="tab-under-4">Item4</label></li>
+            <li><label for="tab-under-5">Item5</label></li>
+            <input type="radio" name="under" id="tab-under-1">
+            <input type="radio" name="under" id="tab-under-2">
+            <input type="radio" name="under" id="tab-under-3">
+            <input type="radio" name="under" id="tab-under-4">
+            <input type="radio" name="under" id="tab-under-5">
+            <li class="last-li-1"></li>
+          </ul>
         </div>
       </section>
+
       <section class="component-options">
-        <ul>
-          <li><button>Option 1</button></li>
-          <li><button>Option 2</button></li>
-          <li><button>Option 3</button></li>
-          <li><button>Option 4</button></li>
-        </ul>
-      </section> 
-    </article>
-   <article class="paper">
-    <section class="squares">
-      <h1>Sqaures</h1>
-      <div class="square shadow-1"></div>
-      <div class="square shadow-2"></div>
-      <div class="square shadow-3"></div>
-      <div class="square shadow-4"></div>
-      <div class="square shadow-5"></div>
-    </section>
-    <section class="animated-squares">
-      <h1>Sqaures - Hover Animated</h1>
-      <div class="square shadow-1 sqaure-animate animate-level-1"></div>
-      <div class="square shadow-2 sqaure-animate animate-level-2"></div>
-      <div class="square shadow-3 sqaure-animate animate-level-3"></div>
-      <div class="square shadow-4 sqaure-animate animate-level-4"></div>
-      <div class="square shadow-5 sqaure-animate animate-level-5"></div>
-      </div>
-    </section>
-    <section class="rounded">
-      <h1>Rounded Sqaures</h1>
-      <div class="rounded shadow-1"></div>
-      <div class="rounded shadow-2"></div>
-      <div class="rounded shadow-3"></div>
-      <div class="rounded shadow-4"></div>
-      <div class="rounded shadow-5"></div>
-    </section>
-    <section class="animated-rounded">
-      <h1>Rounded Sqaures - Hover Animated</h1>
-      <div class="rounded shadow-1 rounded-animate animate-level-1"></div>
-      <div class="rounded shadow-2 rounded-animate animate-level-2"></div>
-      <div class="rounded shadow-3 rounded-animate animate-level-3"></div>
-      <div class="rounded shadow-4 rounded-animate animate-level-4"></div>
-      <div class="rounded shadow-5 rounded-animate animate-level-5"></div>
-    </section>
-    <section class="circles">
-      <h1>Circles</h1>
-      <div class="circle shadow-1"></div>
-      <div class="circle shadow-2"></div>
-      <div class="circle shadow-3"></div>
-      <div class="circle shadow-4"></div>
-      <div class="circle shadow-5"></div>
-    </section>
-    <section class="animated-circles">
-      <h1>Circles - Hover Animated</h1>
-      <div class="circle shadow-1 circle-animate animate-level-1"></div>
-      <div class="circle shadow-2 circle-animate animate-level-2"></div>
-      <div class="circle shadow-3 circle-animate animate-level-3"></div>
-      <div class="circle shadow-4 circle-animate animate-level-4"></div>
-      <div class="circle shadow-5 circle-animate animate-level-5"></div>
-    </section>
-  </article>
-      <h2>UI Component 4</h2>
-      <section class="component-showcase">
-        
+        <h2>Tabs - Underlined style</h2>
+        <div class="tab-container">
+          <ul>
+            <li><label for="tab-under-6">Item1</label></li>
+            <li><label for="tab-under-7">Item2</label></li>
+            <li><label for="tab-under-8">Item3</label></li>
+            <li><label for="tab-under-9">Item4</label></li>
+            <li><label for="tab-under-10">Item5</label></li>
+            <input type="radio" name="under" id="tab-under-6">
+            <input type="radio" name="under" id="tab-under-7">
+            <input type="radio" name="under" id="tab-under-8">
+            <input type="radio" name="under" id="tab-under-9">
+            <input type="radio" name="under" id="tab-under-10">
+            <li class="last-li-2"></li>
+          </ul>
+        </div>
       </section>
+
       <section class="component-options">
-        <ul>
-          <li><button>Option 1</button></li>
-          <li><button>Option 2</button></li>
-          <li><button>Option 3</button></li>
-          <li><button>Option 4</button></li>
-        </ul>
-      </section> 
-    </article>
-    <article class="component-wrapper">
-      <h2>UI Component 5</h2>
-      <section class="component-showcase">
-        
-      </section>
-      <section class="component-options">
-        <ul>
-          <li><button>Option 1</button></li>
-          <li><button>Option 2</button></li>
-          <li><button>Option 3</button></li>
-          <li><button>Option 4</button></li>
-        </ul>
-      </section> 
-    </article>
-    <article class="component-wrapper">
-      <h2>UI Component 6</h2>
-      <section class="component-showcase">
-        
-      </section>
-      <section class="component-options">
-        <ul>
-          <li><button>Option 1</button></li>
-          <li><button>Option 2</button></li>
-          <li><button>Option 3</button></li>
-          <li><button>Option 4</button></li>
-        </ul>
-      </section> 
+        <h2>Tabs - Shadow style / Disabled</h2>
+        <div class="tab-container tab-shadow">
+          <ul>
+            <li><label for="tab-under-11">Item1</label></li>
+            <li><label for="tab-under-12">Item2</label></li>
+            <li><label for="tab-under-13">Item3</label></li>
+            <li><label>Disabled</label></li>
+            <li><label for="tab-under-15">Item5</label></li>
+            <input type="radio" name="under" id="tab-under-11">
+            <input type="radio" name="under" id="tab-under-12">
+            <input type="radio" name="under" id="tab-under-13">
+            <input type="radio" name="under" id="tab-under-14">
+            <input type="radio" name="under" id="tab-under-15">
+            <li class="last-li-3"></li>
+          </ul>
+        </div>
+      </section>  
     </article>
   </main>
   <footer>
-    <p>Created by Jacob Hayslett, Luis Rojas, Tom Narainpursat, and Rafael Garcia.</p>
+    <p>Created by Team #12</p> 
+    <p>Jacob Hayslett - Luis Rojas - Tom Narainpursat - Rafael Garcia.</p>
   </footer>
 </body>
 </html>
